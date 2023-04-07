@@ -1,0 +1,311 @@
+*{
+    margin: 0;
+    overflow-x: hidden;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    
+}
+
+body{
+    /* border: 2px black; */
+    
+}
+
+.content {
+    height: 100vh;
+    width: 100%;
+    background-color: #292929;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+    background-color: #292929;
+    background-color: #292929;
+    background-image: url("data:image/svg+xml,%3Csvg width='64' height='64' viewBox='0 0 64 64' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8 16c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zm33.414-6l5.95-5.95L45.95.636 40 6.586 34.05.636 32.636 2.05 38.586 8l-5.95 5.95 1.414 1.414L40 9.414l5.95 5.95 1.414-1.414L41.414 8zM40 48c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zM9.414 40l5.95-5.95-1.414-1.414L8 38.586l-5.95-5.95L.636 34.05 6.586 40l-5.95 5.95 1.414 1.414L8 41.414l5.95 5.95 1.414-1.414L9.414 40z' fill='%2319b8ff' fill-opacity='0.23' fill-rule='evenodd'/%3E%3C/svg%3E");
+}
+
+.content-left {
+    text-align: center;
+    padding: 1rem;
+    padding-top: 2rem;
+
+    width: 400px;   
+    height: 650px;
+    margin: 1rem;
+    color: #fff;
+    /* box-shadow: 0px 10px 0px 0px #19b8ff; */
+    box-shadow: 0px 10px 20px 5px #19b8ff;
+    /* border: 2px solid #19b8ff; */
+
+    background: rgba( 255, 255, 255, 0 );
+    backdrop-filter: blur( 3px );
+    -webkit-backdrop-filter: blur( 3px );
+    border-radius: 15px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.content-left .pic {
+    background-color: #19b8ff;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+.content-left img {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+}
+.content-left h1 {
+    letter-spacing: 2px;
+    margin-bottom: 3rem;
+}
+.content-left .bio {
+    list-style: none;
+    text-align: start;
+    width: 90%;
+    margin-bottom: 4rem;
+}
+.bio i {
+    font-size: 30px;
+    margin: 0.5rem;
+    margin-bottom: 1rem;
+    vertical-align: middle;
+    width: 40px;
+    text-align: center;
+}
+.bio p {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 20px;
+}
+.bio p span {
+    display: block;
+    font-weight: normal;
+    font-size: 14px;    
+}
+.content-left .socmed {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    width: 80%;
+    justify-content: center;
+    margin-top: 0.5rem;
+}
+.socmed li {
+    margin: 10px;
+    font-size: 32px;
+    width: 100px;
+    height: 70px;
+    padding-bottom: 5px;
+}
+.socmed li i {
+    padding-bottom: 5px;
+    color: #fff;
+}
+.socmed li i:hover {
+    border-bottom: 3px solid #19b8ff;
+    transition: ease-out 4ms;
+}
+
+.content-right {
+    margin: 1rem;
+    margin-top: 1.5rem;
+    border-radius: 20px;
+    width: 1000px;
+    height: 600px;
+    /* box-shadow: 0px 10px 0px 0px #19b8ff; */
+    box-shadow: 0px 10px 20px 5px #19b8ff;
+
+    background: rgba( 255, 255, 255, 0 );
+    backdrop-filter: blur( 3px );
+    -webkit-backdrop-filter: blur( 3px );
+    border-radius: 15px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    margin: 1rem;
+}
+nav img {
+    width: 60px;
+    margin-left: 1rem;
+    border-radius: 10px;
+}
+nav button {
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 2px;
+    border: none;
+    margin-right: 2rem;
+    background-color: transparent;
+    border-bottom: 3px solid #19b8ff ;
+}
+.desc {
+    margin: 1rem;
+    margin-top: 2rem;
+    position: inherit;
+    display: none;
+}
+#about h1 {
+    font-size: 40px;
+    font-weight: 900;
+    color: white;
+    margin-bottom: 3rem;
+    letter-spacing: 2px;
+}
+#about p {
+    width: 69%;
+    color: white;
+    font-size: 18px;
+}
+#about {
+    display: block;
+}   
+#btn1 {
+    background-color: #19b8ff;
+    width: 90px;
+    height: 40px;
+    border-radius: 5px 20px 5px 20px;
+    font-weight: 500;
+}
+#btn2 {
+    width: 80px;
+    height: 40px;
+    border-radius: 5px 25px 10px 10px;
+    font-weight: 500;
+}
+#btn3 {
+    width: 135px;
+    height: 40px;
+    border-radius: 5px 25px 10px 10px;
+    font-weight: 500;
+}
+
+#skills h1 {
+    color: white;
+    letter-spacing: 2px;
+    margin-bottom: 3rem;
+}
+
+#skills .lang {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin-top: 3rem;
+}
+
+.lang li {
+    width: 100px;
+}
+
+.lang li img {
+    width: 75px;
+}
+
+#skills .cert {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin-top: 2rem;
+}
+
+.cert li img {
+    width: 200px;
+    margin: 1rem;
+    margin-right: 2rem;
+}
+
+.cert li img:hover {
+    width: 250px;
+    transition: ease-out 0.3s;
+    box-shadow: 0px 10px 20px 5px #19b8ff;
+}
+
+.list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#porto h1 {
+    color: white;
+    letter-spacing: 2px;
+}
+#porto .card {
+    width: 250px;
+    height: 360px;
+    background: #323232;
+/* box-shadow: 0 8px 32px 0 #19b8ff; */
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 4px );
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 1.5rem;
+    flex-wrap: wrap;
+}
+.card:hover {
+    transform: scale(1.05);
+    transition: 0.2s all;
+    filter: brightness(1.1);
+    border-radius: 10px;
+    
+}
+.card .img-pr {
+    width: 200px;
+    max-height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 1rem;
+}
+.card .info {
+    width: 90%;
+}
+.title-pr {
+    font-size: 22px;
+    letter-spacing: 1px;
+    margin-bottom: 1.5rem;
+}
+.info p {
+    color: #fff;
+    font-size: 15px;
+    font-weight: lighter;
+    letter-spacing: 1px;
+}
+hr {
+    margin-top: 10px;
+}
+.tool {
+    display: flex;
+    align-items: center;
+    margin: 0px;
+}
+h4 {
+    color: #fff;
+    font-size: 15px;
+    font-weight: lighter;
+    letter-spacing: 1px;
+}
+.mini-logo {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    background-color: white;
+    padding: 3px;
+    border-radius: 50%;
+    margin: 10px;
+}

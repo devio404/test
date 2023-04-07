@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/20b9ad9e09.js" crossorigin="anonymous"></script>
+
+    <title>va</title>
+</head>
+<div>
+    
+    <div class="content">
+        <div class="content-left">
+            <div class="pic">
+                <img src="assets/pp.jpg">
+            </div>
+            <h1 class="name">Muhammad Dio R. H.</h1>
+            
+            <div class="bio">
+                <div>
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p><span>Indonesia</span>Surabaya, East Java</p>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-school"></i>
+                    <p>SMKN in Surabaya</p>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-envelope"></i>
+                    <p>rizqiii.dio@gmail.com</p>
+                </div>
+            </div>
+
+            <p>--- Social Media ---</p>
+            <div class="socmed">
+                <li><a href="https://instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="https://tiktok.com" target="_blank"><i class="fa-brands fa-tiktok"></i></a></li>
+                <li><a href="https://youtube.com" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+                <li><a href="https://github.com" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+            </div>
+        </div>
+
+        <div class="content-right">
+        <!-- <div class="tab"> -->
+            <nav>
+                <img class="logo" src="assets/logo.png">
+
+                <div class="btn">
+                    <button id="btn1" onclick="open1()" >About</button>
+                    <button id="btn2" onclick="open2()" >Skills</button>
+                    <button id="btn3" onclick="open3()" >Portofolio</button>
+                </div>
+            </nav>
+
+            <div id="about" class="desc">
+                <h1>Hi&#128075;, <br>
+                    I'm Dio Rizqi
+                </h1>
+                <p>
+                    I'm a student of Vocational High School, study in department Software Engineering. I like to Learn everything about technology especially cyber security and network. My goal is being a Backend Developer and build a startup.  
+                </p>
+                    <br>
+                <p>
+                    I also like to make video for eduaciton in platform like tiktok and youtube. Don't forget to visit my blog &#128521;.
+                </p>
+            </div>
+
+            <div id="skills" class="desc">
+                <h1>My Skills 😎</h1>
+                <div class="lang">
+                    <li><img src="assets/html.png"></li>
+                    <li><img src="assets/css.png"></li>
+                    <li><img src="assets/js.png"></li>
+                    <li><img src="assets/python.png"></li>
+                    <li><img src="assets/java.png"></li>
+                    <li><img src="assets/cpp.png"></li>
+                </div>
+
+                <div class="cert">
+                    <li><img src="assets/cppc.jpg"></li>
+                    <li><img src="assets/awsc.jpg"></li>
+                    <li><img src="assets/pythonc.jpg"></li>
+                </div>
+            </div>
+
+            <div id="porto" class="desc">
+                <h1>My Project &#128640;</h1>
+                
+                <div class="list">
+
+                <div class="card">
+                    <img src="assets/HOMEPAGE.png" class="img-pr">
+                    <div class="info">
+                        <h1 class="title-pr">Game Masbro</h1>
+                        <p>Lorem ipsum dolor sit amet stancius er palorel</p>
+                        <hr>
+                        <div class="tool">
+                            <h4>Build with</h4>
+                            <img class="mini-logo" src="assets/java.png">
+                            <img class="mini-logo" src="assets/greenfoot.png">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="assets/smenalis.png" class="img-pr">
+                    <div class="info">
+                        <h1 class="title-pr">Smenalis Website</h1>
+                        <p>Lorem ipsum dolor sit amet stancius er palorel</p>
+                        <hr>
+                        <div class="tool">
+                            <h4>Build with</h4>
+                            <img class="mini-logo" src="assets/html.png">
+                            <img class="mini-logo" src="assets/css.png">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="assets/HOMEPAGE.png" class="img-pr">
+                    <div class="info">
+                        <h1 class="title-pr">Simple LinkTree</h1>
+                        <p>Lorem ipsum dolor sit amet stancius er palorel</p>
+                        <hr>
+                        <div class="tool">
+                            <h4>Build with</h4>
+                            <img class="mini-logo" src="assets/html.png">
+                            <img class="mini-logo" src="assets/css.png">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            </div>
+
+            <!-- <div class="footer">
+                <h1>ini merupakan footer</h1>
+            </div> -->
+    </div>
+</div>
+    
+
+    <script>
+        var about = document.getElementById("about");
+        var skills = document.getElementById("skills");
+        var porto = document.getElementById("porto");
+        var btn1 = document.getElementById("btn1");
+        var btn2= document.getElementById("btn2");
+        var btn3 = document.getElementById("btn3");
+
+        function open1(){
+            about.style.display = "block";
+            skills.style.display = "none";
+            porto.style.display = "none";
+
+            btn1.style.backgroundColor = "#19b8ff";
+            btn2.style.backgroundColor = "#292929";
+            btn3.style.backgroundColor = "#292929";
+
+            btn1.style.borderRadius = "5px 20px 5px 20px";
+            btn2.style.borderRadius = "5px 25px 10px 10px";
+            btn3.style.borderRadius = "5px 25px 10px 10px";
+        }
+
+        function open2(){
+            about.style.display = "none";
+            skills.style.display = "block";
+            porto.style.display = "none";
+
+            btn1.style.backgroundColor = "#292929";
+            btn2.style.backgroundColor = "#19b8ff";
+            btn2.style.color = "#185dcfe";
+            btn3.style.backgroundColor = "#292929";
+
+            btn1.style.borderRadius = "5px 25px 10px 10px";
+            btn2.style.borderRadius = "5px 20px 5px 20px";
+            btn3.style.borderRadius = "5px 25px 10px 10px";
+        }
+
+        function open3(){
+            about.style.display = "none";
+            skills.style.display = "none";
+            porto.style.display = "block";
+
+            btn1.style.backgroundColor = "#292929";
+            btn2.style.backgroundColor = "#292929";
+            btn3.style.backgroundColor = "#19b8ff";
+
+            btn1.style.borderRadius = "5px 25px 10px 10px";
+            btn2.style.borderRadius = "5px 25px 10px 10px";
+            btn3.style.borderRadius = "5px 20px 5px 20px";
+        }
+
+    </script>
+</body>
+</html>
